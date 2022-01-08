@@ -1,0 +1,21 @@
+server:
+  port: 8050
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: microservice-file-upload
+  http:
+    multipart:
+      max-file-size: 500Mb      # Max file size，默认1M
+      max-request-size: 1000Mb   # Max request size，默认10M
+#zuul是用hystrix控制超时时间所以要设置超时时间
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
+#zuul上传文件负载均衡
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 60000

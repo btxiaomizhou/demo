@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-consumer" />
+        <module name="eureka-consumer-user" />
+        <module name="eureka-demo-one" />
+        <module name="eureka-feigin-with-hystrix" />
+        <module name="eureka-feign" />
+        <module name="eureka-feign-one" />
+        <module name="eureka-feign-with-hystrix-factory" />
+        <module name="eureka-feign-without-hystrix" />
+        <module name="eureka-hystrix-dashboard" />
+        <module name="eureka-hystrix-turbin" />
+        <module name="eureka-properties" />
+        <module name="eureka-provider" />
+        <module name="eureka-ribbon-with-hystrix" />
+        <module name="eureka-server" />
+        <module name="eureka-with-propagation" />
+        <module name="microservice-file-upload" />
+        <module name="microservice-gateway-zuul-fallback" />
+        <module name="microservice-gateway-zuul-filter" />
+        <module name="microservice-gatway-zuul" />
+        <module name="ribbon-one" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

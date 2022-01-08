@@ -1,0 +1,38 @@
+#server:
+#  port: 8761
+#eureka:
+#  environment: product
+#  datacenter: abc
+#  instance:
+#    prefer-ip-address: false
+#    hostname: eureka-server
+#    instance-id: ${eureka.instance.hostname}:${server.port}
+#    metadata-map:
+#      zone: ABC  #eureka可以理解的源数据
+#      lilizhou: BBC #不会影响客户端行为
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#    fetch-registry: false
+#    register-with-eureka: false
+#  dashboard:
+#    enabled: true
+#  server:
+#    enable-self-preservation: false #关闭自我保护模式
+#    eviction-interval-timer-in-ms: 30 #清理间隔
+
+#    healthcheck:
+#      enabled: true
+
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: eureka-server
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true

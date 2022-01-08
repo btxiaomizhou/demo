@@ -1,0 +1,30 @@
+#server:
+#  port: 8002
+#spring:
+#  application:
+#    name: eureka-provider
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    prefer-ip-address: true
+#  instance:
+#    prefer-ip-address: true
+#    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+#    appname: eureka-haha  ����õ� ���application.name�����г�ͻ��appname ����Ϊ��ѡ����
+#  healthcheck:
+#    enabled: true
+server:
+  port: 8002
+spring:
+  application:
+    name: eureka-provider
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

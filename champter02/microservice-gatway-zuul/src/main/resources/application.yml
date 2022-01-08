@@ -1,0 +1,50 @@
+server:
+  port: 8040
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: microservice-gatway-zuul
+zuul:
+  ignoredServices: '*'
+  routes:
+    eureka-provider: /user/**
+#zuul:
+#  routes:
+#    users:
+#      path: /abc/**
+#      serviceId: eureka-provider
+#zuul:
+#  routes:
+#    abc:
+#      path: /abc/**
+#      url: http://localhost:8002/
+#zuul:
+#  routes:
+#    abc:
+#      path: /abc/**
+#      serviceId: eureka-provider
+#
+#ribbon:
+#  eureka:
+#    enabled: false
+#
+#eureka-provider:  #�����service_id
+#  ribbon:
+#    listOfServers: http://localhost:8002,http://localhost:8003
+#zuul:
+#  prefix: /ticket
+#  strip-prefix: false
+#logging:
+#  level:
+#    com.netflix: debug
+#zuul:
+#  ignored-headers:
+#endpoints:
+#  actuator:
+#    enabled: true
+#  sensitiveHeaders: Cookie,Set-Cookie,Authorization

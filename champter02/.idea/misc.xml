@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-consumer-user/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-properties/pom.xml" />
+        <option value="$PROJECT_DIR$/ribbon-one/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-feign-one/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-demo-one/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-ribbon-with-hystrix/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-with-propagation/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-feigin-with-hystrix/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-feign-without-hystrix/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-feign-with-hystrix-factory/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-hystrix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-hystrix-turbin/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-gatway-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-file-upload/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-gateway-zuul-fallback/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-gateway-zuul-filter/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
