@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.github.demo.springbootmybatisjta.dao.test.UserTestDao" >
+    <insert id="addUser">
+        insert into t_user (id,name,password)
+        values(#{id},#{name},#{password})
+    </insert>
+
+    <select id="getTestUser" resultType="com.github.demo.springbootmybatisjta.entity.User">
+       select id,name,password from t_user
+    </select>
+</mapper>

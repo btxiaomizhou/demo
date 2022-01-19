@@ -1,0 +1,61 @@
+2022-01-19 16:07:19.941  INFO 9096 --- [main] c.g.d.s.SpringbootMybatisJtaApplication  : Starting SpringbootMybatisJtaApplication on LAPTOP-4O656ROD with PID 9096 (D:\work\demo\springboot-mybatis-jta\target\classes started by 书茴 in D:\work\demo\springboot-mybatis-jta)
+2022-01-19 16:07:19.945  INFO 9096 --- [main] c.g.d.s.SpringbootMybatisJtaApplication  : No active profile set, falling back to default profiles: default
+2022-01-19 16:07:20.558  WARN 9096 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userLuckDogDao' and 'com.github.demo.springbootmybatisjta.dao.luckdog.UserLuckDogDao' mapperInterface. Bean already defined with the same name!
+2022-01-19 16:07:20.558  WARN 9096 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userTestDao' and 'com.github.demo.springbootmybatisjta.dao.test.UserTestDao' mapperInterface. Bean already defined with the same name!
+2022-01-19 16:07:20.559  WARN 9096 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.github.demo.springbootmybatisjta.dao]' package. Please check your configuration.
+2022-01-19 16:07:21.253  INFO 9096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-19 16:07:21.266  INFO 9096 --- [main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-19 16:07:21.274  INFO 9096 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-19 16:07:21.275  INFO 9096 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2022-01-19 16:07:21.443  INFO 9096 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-19 16:07:21.443  INFO 9096 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1449 ms
+2022-01-19 16:07:21.619  WARN 9096 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'userLuckDogDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userLuckDogDao' defined in file [D:\work\demo\springboot-mybatis-jta\target\classes\com\github\demo\springbootmybatisjta\dao\luckdog\UserLuckDogDao.class]: Cannot resolve reference to bean 'sqlSessionTemplateLuckDog' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplateLuckDog' defined in class path resource [com/github/demo/springbootmybatisjta/config/DataSourceLuckDogConfig.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplateCar' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactoryLuckDog' defined in class path resource [com/github/demo/springbootmybatisjta/config/DataSourceLuckDogConfig.class]: Unsatisfied dependency expressed through method 'sqlSessionFactoryCar' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceLuckdog' defined in class path resource [com/github/demo/springbootmybatisjta/config/DataSourceLuckDogConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSourceCar' threw exception; nested exception is org.springframework.beans.FatalBeanException: Could not copy property 'filters' from source to target; nested exception is java.lang.reflect.InvocationTargetException
+2022-01-19 16:07:21.622  INFO 9096 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-01-19 16:07:21.644  INFO 9096 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-19 16:08:05.463  INFO 30712 --- [main] c.g.d.s.SpringbootMybatisJtaApplication  : Starting SpringbootMybatisJtaApplication on LAPTOP-4O656ROD with PID 30712 (D:\work\demo\springboot-mybatis-jta\target\classes started by 书茴 in D:\work\demo\springboot-mybatis-jta)
+2022-01-19 16:08:05.467  INFO 30712 --- [main] c.g.d.s.SpringbootMybatisJtaApplication  : No active profile set, falling back to default profiles: default
+2022-01-19 16:08:06.446  WARN 30712 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userLuckDogDao' and 'com.github.demo.springbootmybatisjta.dao.luckdog.UserLuckDogDao' mapperInterface. Bean already defined with the same name!
+2022-01-19 16:08:06.447  WARN 30712 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userTestDao' and 'com.github.demo.springbootmybatisjta.dao.test.UserTestDao' mapperInterface. Bean already defined with the same name!
+2022-01-19 16:08:06.447  WARN 30712 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.github.demo.springbootmybatisjta.dao]' package. Please check your configuration.
+2022-01-19 16:08:07.136  INFO 30712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-19 16:08:07.148  INFO 30712 --- [main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-19 16:08:07.155  INFO 30712 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-19 16:08:07.156  INFO 30712 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2022-01-19 16:08:07.296  INFO 30712 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-19 16:08:07.297  INFO 30712 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1772 ms
+2022-01-19 16:08:07.610  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : Loaded jar:file:/D:/repository/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+2022-01-19 16:08:07.612  WARN 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2022-01-19 16:08:07.616  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2022-01-19 16:08:07.617  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.allow_subtransactions = true
+2022-01-19 16:08:07.617  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.recovery_delay = 10000
+2022-01-19 16:08:07.617  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.automatic_resource_registration = true
+2022-01-19 16:08:07.617  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.oltp_max_retries = 5
+2022-01-19 16:08:07.617  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.client_demarcation = false
+2022-01-19 16:08:07.617  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.threaded_2pc = false
+2022-01-19 16:08:07.617  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.serial_jta_transactions = true
+2022-01-19 16:08:07.617  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.log_base_dir = ./
+2022-01-19 16:08:07.617  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.rmi_export_class = none
+2022-01-19 16:08:07.617  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.max_actives = 50
+2022-01-19 16:08:07.618  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.checkpoint_interval = 500
+2022-01-19 16:08:07.618  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.enable_logging = true
+2022-01-19 16:08:07.618  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.log_base_name = tmlog
+2022-01-19 16:08:07.618  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.max_timeout = 300000
+2022-01-19 16:08:07.618  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.trust_client_tm = false
+2022-01-19 16:08:07.618  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2022-01-19 16:08:07.618  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.tm_unique_name = 169.254.74.82.tm
+2022-01-19 16:08:07.618  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2022-01-19 16:08:07.618  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2022-01-19 16:08:07.618  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: java.naming.provider.url = rmi://localhost:1099
+2022-01-19 16:08:07.618  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2022-01-19 16:08:07.619  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.default_jta_timeout = 10000
+2022-01-19 16:08:07.619  INFO 30712 --- [main] c.a.icatch.provider.imp.AssemblerImp     : Using default (local) logging and recovery...
+2022-01-19 16:08:07.973  INFO 30712 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-19 16:08:08.161  INFO 30712 --- [main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-19 16:08:08.282  INFO 30712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-19 16:08:08.285  INFO 30712 --- [main] c.g.d.s.SpringbootMybatisJtaApplication  : Started SpringbootMybatisJtaApplication in 3.754 seconds (JVM running for 5.286)
+2022-01-19 16:08:18.393  INFO 30712 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-19 16:08:18.394  INFO 30712 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-19 16:08:18.403  INFO 30712 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
